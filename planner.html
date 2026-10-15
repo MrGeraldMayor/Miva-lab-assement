@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dedeibe Michael Tochukwu - student portfolio and academic planner for MIVA Open University COS 106.">
+  <title>Planner | Dedeibe Michael Tochukwu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="brand">Dedeibe Michael </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <section class="page-banner">
+      <div class="container">
+        <h1>Academic planner</h1>
+        <p>Add tasks, tick them off and keep track of deadlines.</p>
+      </div>
+    </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Add a task</h2>
+        <form id="task-form" class="planner-form" novalidate>
+          <div class="field">
+            <label for="task-name">Task name</label>
+            <input type="text" id="task-name" placeholder="e.g. Submit assignment 2">
+            <span class="error-msg" id="task-name-error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="task-date">Due date</label>
+            <input type="date" id="task-date">
+            <span class="error-msg" id="task-date-error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="task-priority">Priority</label>
+            <select id="task-priority">
+              <option value="High">High</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Low">Low</option>
+            </select>
+            <span class="error-msg"></span>
+          </div>
+          <button type="submit" class="btn btn--dark" style="margin-bottom:1.4rem">Add task</button>
+        </form>
+
+        <p class="task-stats">
+          <strong>Total: <span id="stat-total">0</span></strong>
+          <strong>Pending: <span id="stat-pending">0</span></strong>
+          <strong>Completed: <span id="stat-done">0</span></strong>
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Your tasks</caption>
+            <thead>
+              <tr>
+                <th scope="col">Task</th>
+                <th scope="col">Due date</th>
+                <th scope="col">Priority</th>
+                <th scope="col">Status</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="task-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Dedeibe Michael Tochukwu</strong>
+          <p>Student, developer and music producer.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="year">2026</span> Dedeibe Michael Tochukwu. Built for MIVA Open University, COS 106 Introduction to Web Technologies.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

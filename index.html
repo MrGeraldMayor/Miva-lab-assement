@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gera D. - student portfolio and academic planner for MIVA Open University COS 106.">
+  <title>Home | Dedeibe Michael Tochukwu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="brand">Dedeibe Michael Tochukwu</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="kicker">Welcome to my portfolio</p>
+          <h1>Hi, I'm Dedeibe Michael Tochukwu. I build things for the web and make music.</h1>
+          <p>I'm a MIVA Open University student learning full-stack development. I enjoy turning ideas into working apps, and I produce and write songs when I'm away from the keyboard.</p>
+          <div class="btn-row">
+            <a href="projects.html" class="btn">See my projects</a>
+            <a href="contact.html" class="btn btn--ghost">Get in touch</a>
+          </div>
+        </div>
+        <div class="avatar-wrap">
+          <img class="avatar" src="cropped_circle_image.jpg" alt="Portrait of Dedeibe Michael Tochukwu">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What I do</h2>
+        <p class="section-intro">The areas I spend most of my time on.</p>
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#128187;</div>
+            <h3>Full-stack development</h3>
+            <p>I build responsive front ends with HTML, CSS and JavaScript, and connect them to back ends written in Node.js and Python.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#127911;</div>
+            <h3>Music production</h3>
+            <p>I record, arrange and mix my own tracks. Working with sound has taught me to care about timing, structure and detail.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">&#128241;</div>
+            <h3>Web and mobile apps</h3>
+            <p>From task managers to crypto dashboards, I design apps that are simple to use and work well on any screen size.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint">
+      <div class="container">
+        <h2>Meet me in 30 seconds</h2>
+        <div class="media-box">
+          <div>
+            <p>Press play to hear a short introduction about who I am and what I'm learning in COS 106.</p>
+            <p>Audio file: <code>intro.mp3</code> (add your own recording to the project folder).</p>
+          </div>
+          <figure style="margin:0">
+            <audio controls preload="none">
+              <source src="intro.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <figcaption style="margin-top:.5rem;font-size:.9rem;color:var(--slate-300)">Introduction from Gera D.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Gera D.</strong>
+          <p>Student, developer and music producer.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="planner.html">Planner</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="year">2026</span> Gera D. Built for MIVA Open University, COS 106 Introduction to Web Technologies.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
