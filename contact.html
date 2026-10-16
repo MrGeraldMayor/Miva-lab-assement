@@ -7,6 +7,8 @@
   <title>Contact | Dedeibe Michael Tochukwu</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="file.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -49,25 +51,38 @@
           <div id="form-success" class="notice" role="status" aria-live="polite"></div>
 
           <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name">
-            <span class="error-msg" aria-live="polite"></span>
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" name="name" autocomplete="name">
+            <span id="c-name-error" class="error-msg" aria-live="polite"></span>
           </div>
+
           <div class="field">
-            <label for="email">Email address</label>
-            <input type="email" id="email" name="email" autocomplete="email">
-            <span class="error-msg" aria-live="polite"></span>
+            <label for="c-email">Email address</label>
+            <input type="email" id="c-email" name="email" autocomplete="email">
+            <span id="c-email-error" class="error-msg" aria-live="polite"></span>
           </div>
+
           <div class="field">
-            <label for="phone">Phone number</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric">
-            <span class="error-msg" aria-live="polite"></span>
+            <label for="c-phone">Phone number</label>
+            <input type="tel" id="c-phone" name="phone" autocomplete="tel" inputmode="numeric">
+            <span id="c-phone-error" class="error-msg" aria-live="polite"></span>
           </div>
+
           <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5"></textarea>
-            <span class="error-msg" aria-live="polite"></span>
+            <label for="c-subject">Subject / Reason</label>
+            <input type="text" id="c-subject" name="subject" placeholder="e.g. Internship or Collaboration">
+            <span id="c-subject-error" class="error-msg" aria-live="polite"></span>
           </div>
+
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" rows="5"></textarea>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4px;">
+              <span id="c-message-error" class="error-msg" aria-live="polite"></span>
+              <span id="c-count" style="font-size: 0.85rem; color: #666;">0 / 500</span>
+            </div>
+          </div>
+
           <button type="submit" class="btn btn--dark">Send message</button>
         </form>
       </div>
